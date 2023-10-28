@@ -1,0 +1,139 @@
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+
+.bodyContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+h1{
+    margin-bottom: 5px;
+    margin-top: 50px;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+}
+
+.subHeader{
+    margin-top: 15px;
+    color: hsl(209, 33%, 12%);
+}
+
+.inputSection{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    grid-auto-flow: column;
+}
+
+input, button{
+    padding: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+    display: inline;
+}
+
+input{
+    width: 500px;
+    border-radius: 40px;
+    border: 1px solid hsl(223, 100%, 88%);
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+::placeholder {
+    color: hsl(223, 100%, 88%);
+    opacity: 1; /* Firefox */
+  }
+  
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: hsl(223, 100%, 88%);
+}
+
+button{
+    width: 200px;
+    border-radius: 40px;
+    background-color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 87%, 63%);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+button:hover{
+    background-color: hsl(209, 33%, 12%);
+    border-color: hsl(209, 33%, 12%);
+    cursor: pointer;
+}
+
+.errorMsg{
+    display: grid;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    font-size: 14px;
+    font-style: italic;
+    margin: 10px auto 35px 25px;
+}
+
+.illustration{
+    width: 800px;
+    margin: 50px auto;
+}
+
+.fa-brands{
+    color: hsl(223, 87%, 63%);
+    margin: 15px 15px;
+}
+
+.icons{
+    margin: auto 100px;
+}
+
+.copyright{
+    font-size: 14px;
+    color: hsl(0, 0%, 59%);
+    margin-left: 55px;
+}
+
+@media (max-width:920px) and (min-width: 375px){
+    .bodyContent{
+        font-size: 14px;
+        margin-top: 45px;
+    }
+
+    .inputSection{
+        display: grid;
+        grid-auto-flow: row;
+        margin-top: 30px;
+    }
+
+    input{
+        width: 350px;
+        border-radius: 40px;
+        font-size: 16px;
+    }
+
+    button{
+        width: 390px;
+        font-size: 14px;
+    }
+
+    .errorMsg{
+        margin-left: 75px;
+    }
+
+    .illustration{
+        width: 450px;
+        margin-bottom: 50px;
+    }
+
+    .icons{
+        font-size: 20px;
+    }
+}
