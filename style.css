@@ -64,6 +64,7 @@ button{
     font-weight: 600;
     font-size: 20px;
     letter-spacing: 1px;
+    box-shadow: hsl(223, 100%, 88%) 0px 5px 15px;
 }
 
 button:hover{
